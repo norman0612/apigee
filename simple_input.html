@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
+<style>
+body {
+    color: rgb(102, 102, 102);
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+input {
+    background: rgba(255,255,255,0.5);
+    border: 1px solid rgb(194, 194, 194);
+    color: rgb(102, 102, 102);
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    margin: 0 0 10px 0;
+    padding: 5px;
+}
+
+.input-data {
+    font-size: 12px;
+}
+
+input.input-data:focus {
+    outline-width: 0;
+}
+
+.input-submit {
+    font-size: 12px;
+}
+
+
+</style>
+</head>
+
 <body>
  
 <form action="javascript:void(0)">
-Input: <input type="text" name="MyInput" class="input-data"><br>
+<label for="MyInput">Input: </label>
+<input type="text" "id"="MyInput" name="MyInput" class="input-data">
 <input type="submit" value="Submit" class="input-submit" onclick="get_data(print_response);">
 </form>
  
